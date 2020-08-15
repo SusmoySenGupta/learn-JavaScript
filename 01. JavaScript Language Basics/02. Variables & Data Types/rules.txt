@@ -1,0 +1,3 @@
+Rules:
+-> Naming convenions.
+-> Can't use default keywords

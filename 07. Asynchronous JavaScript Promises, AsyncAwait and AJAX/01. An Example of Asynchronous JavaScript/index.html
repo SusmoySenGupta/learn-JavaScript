@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07. Asynchronous JavaScript Promises, AsyncAwait and AJAX</title>
+</head>
+
+<body>
+    <h1>Asynchronous JavaScript</h1>
+</body>
+<script>
+    const second = () => {
+        // console.log('Second');
+        setTimeout(() => {
+            console.log('Async');
+        }, 2000);
+    }
+
+    const first = () => {
+        console.log('Hey There');
+        second();
+        console.log('The end');
+    }
+
+    first();
+</script>
+
+</html>
