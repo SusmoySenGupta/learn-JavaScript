@@ -6,13 +6,12 @@ export default class Search {
     }
 
     async getRecipies() {
-        const key = "b0080b30eed94f5cba5fcb96a1767051";
+        const key = "d4941e6bc8c744398bd97db824b34441";
         try {
-            const res = await axios(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${key}&query=${this.query}`);
+            const res = await axios(`https://api.spoonacular.com/recipes/complexSearch?query=${this.query}&number=30&apiKey=${this.key}`);
             this.recipies = res.data.results;
         } catch (error) {
             alert(error);
         }
-        //console.log(res);
     }
 }
